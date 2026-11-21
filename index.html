@@ -275,7 +275,7 @@ function renderAll(){
   const h=document.documentElement;h.lang=S.lang==='ckb'?'ckb':S.lang;h.dir=t('dir');h.dataset.theme=S.theme;
   document.querySelectorAll('[data-i]').forEach(e=>e.textContent=t(e.dataset.i));
   document.querySelectorAll('[data-ip]').forEach(e=>e.placeholder=t(e.dataset.ip));
-  $('amt').placeholder=nd('0');document.title=S.lang==='en'?'Income & Expenses':S.lang==='fa'?'دخل و خرج':'دەخل و خەرج';
+  $('amt').placeholder=nd('0');document.title=S.lang==='en'?'Income & Expenses':S.lang==='fa'?'جیب':'گیرفان';
   renderList();renderStats();renderSettings();doSearch();
   requestAnimationFrame(()=>{$('tc').content=getComputedStyle(document.body).backgroundColor;moveHl()});
 }
